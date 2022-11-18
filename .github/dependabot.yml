@@ -1,10 +1,14 @@
 version: 2
 updates:
-- package-ecosystem: docker
-  schedule:
-    interval: daily
-    time: "16:00"
-    timezone: "America/Vancouver"
-  directory: "/"
-  labels:
-    - "dependencies"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    labels:
+      - "dependencies"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/"
+    labels:
+      - "dependencies"
+    schedule:
+      interval: "daily"
