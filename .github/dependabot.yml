@@ -6,9 +6,9 @@ updates:
       - "dependencies"
     schedule:
       interval: "daily"
-  - package-ecosystem: "docker"
-    directory: "/"
-    labels:
-      - "dependencies"
-    schedule:
-      interval: "daily"
+  # - package-ecosystem: "docker"
+  #   directory: "/"
+  #   labels:
+  #     - "dependencies"
+  #   schedule:
+  #     interval: "daily"
