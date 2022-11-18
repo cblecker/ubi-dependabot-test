@@ -1,0 +1,10 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  schedule:
+    interval: daily
+    time: "17:45"
+    timezone: "America/Vancouver"
+  directory: "/"
+  labels:
+    - "dependencies"
