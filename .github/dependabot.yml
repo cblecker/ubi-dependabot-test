@@ -1,14 +1,14 @@
 version: 2
 updates:
+  - package-ecosystem: "docker"
+    directory: "/build"
+    labels:
+      - "area/dependency"
+    schedule:
+      interval: "daily"
   - package-ecosystem: "github-actions"
     directory: "/"
     labels:
-      - "dependencies"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "docker"
-    directory: "/"
-    labels:
-      - "dependencies"
+      - "area/dependency"
     schedule:
       interval: "daily"
