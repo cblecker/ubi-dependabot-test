@@ -8,7 +8,7 @@ COPY . .
 RUN go build .
 
 ####
-FROM registry.access.redhat.com/ubi8/ubi-minimal:8.10-896.1717584414
+FROM registry.access.redhat.com/ubi8/ubi-minimal:8.10-1018
 
 COPY --from=builder /workdir/ubi-dependabot-test /usr/local/bin/
 
